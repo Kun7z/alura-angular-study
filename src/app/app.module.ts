@@ -12,6 +12,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { CardDepoimentosComponent } from './shared/card-depoimentos/card-depoimentos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +24,16 @@ import { HomeComponent } from './pages/home/home.component';
     BannerComponent,
     CardComponent,
     ContainerComponent,
-    HomeComponent
+    HomeComponent,
+    CardBuscaComponent,
+    CardDepoimentosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()
